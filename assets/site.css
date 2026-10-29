@@ -109,3 +109,37 @@ main { display: block; min-height: 60vh; }
 
 /* Legal pages: the policy blocks bring their own styles */
 .kc-legal { max-width: 100%; }
+
+/* Two-door home page and Creatives page */
+.kc-gate { background: var(--offwhite); padding: 96px 24px 88px; }
+.kc-gate-inner { max-width: 960px; margin: 0 auto; }
+.kc-narrow { max-width: 680px; }
+.kc-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin: 0 0 20px; }
+.kc-gate-h { font-size: 42px; line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; margin: 0 0 48px; max-width: 740px; }
+.kc-paths { display: grid; grid-template-columns: 1fr; gap: 24px; }
+.kc-path {
+  display: flex; flex-direction: column; gap: 14px;
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  padding: 36px; text-decoration: none; color: var(--navy);
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+.kc-path:hover, .kc-path:focus-visible { border-color: var(--navy); box-shadow: 0 8px 28px rgba(28,43,74,.10); transform: translateY(-2px); outline: none; }
+.kc-path:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.kc-path-icon { display: inline-flex; width: 88px; height: 88px; align-items: center; justify-content: center; border-radius: 50%; background: var(--navy); color: var(--gold); }
+.kc-icon-sm { width: 72px; height: 72px; margin-bottom: 28px; }
+.kc-icon-sm svg { width: 44px; height: 44px; }
+.kc-path-title { font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+.kc-path-text { font-size: 16px; line-height: 1.6; color: var(--grey); }
+.kc-path-go { margin-top: auto; padding-top: 8px; font-size: 14px; font-weight: 600; color: var(--navy); }
+.kc-path:hover .kc-path-go { text-decoration: underline; }
+.kc-gate-note { margin: 40px 0 0; font-size: 15px; color: var(--grey); }
+.kc-gate-note a { color: var(--navy); font-weight: 500; }
+.kc-lede { font-size: 18px; line-height: 1.65; color: var(--grey); margin: 0 0 20px; }
+.kc-soon { display: inline-block; margin: 12px 0 16px; padding: 6px 14px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy); border: 1px solid var(--gold); border-radius: 999px; }
+.kc-btn { display: inline-block; margin-top: 8px; padding: 14px 32px; background: var(--navy); color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; letter-spacing: 0.06em; border-radius: 6px; }
+.kc-btn:hover { background: #2D4A6E; }
+@media (min-width: 768px) {
+  .kc-gate { padding: 120px 24px 112px; }
+  .kc-paths { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 767px) { .kc-gate-h { font-size: 32px; margin-bottom: 32px; } .kc-path { padding: 28px; } }
