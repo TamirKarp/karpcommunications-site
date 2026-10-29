@@ -2,7 +2,7 @@
   var MAIL = 'info@karpcommunications.com';
 
   var GUIDE_ERRORS = {
-    invalid: 'Please add a valid email address and tick the first box.',
+    invalid: 'Please add a valid email address and tick the box to agree.',
     rate: 'Too many requests from your connection. Please try again in a few minutes.',
     busy: 'A lot of people have asked for the guide today. Please try again tomorrow, or email ' + MAIL + ' and I will send it by hand.',
     send: 'Sorry, that did not send. Please email ' + MAIL + ' and I will send the guide by hand.'
@@ -32,7 +32,6 @@
           name: form.name.value,
           email: form.email.value,
           consent: form.consent.checked,
-          updates: form.updates.checked,
           _gotcha: form._gotcha.value
         };
       } else {
