@@ -143,3 +143,15 @@ main { display: block; min-height: 60vh; }
   .kc-paths { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 767px) { .kc-gate-h { font-size: 32px; margin-bottom: 32px; } .kc-path { padding: 28px; } }
+
+/* Guide landing page (Creatives) */
+.kc-h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; margin: 40px 0 12px; }
+.kc-guide-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-top: 40px; }
+.kc-guide-card h2 { font-size: 24px; letter-spacing: -0.01em; margin: 0 0 4px; }
+.kc-guide-card .kc-form label:first-child { margin-top: 12px; }
+.kc-form .kc-check { display: flex; gap: 12px; align-items: flex-start; font-weight: 400; font-size: 15px; line-height: 1.5; color: var(--grey); margin: 20px 0 0; cursor: pointer; }
+.kc-form .kc-check input { width: 20px; height: 20px; margin: 2px 0 0; flex: none; accent-color: var(--navy); }
+.kc-form .kc-check a { color: var(--navy); }
+.kc-fine { font-size: 14px; color: var(--grey); margin: 16px 0 0; }
+@media (max-width: 767px) { .kc-guide-card { padding: 24px; } }
+.kc-form .kc-check span { color: var(--grey); margin-left: 0; }
