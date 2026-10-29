@@ -27,8 +27,8 @@
 
       fetch(form.action, {
         method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        headers: { 'Content-Type': 'application/json' }
       })
         .then(function (r) {
           if (!r.ok) throw new Error('bad status');
