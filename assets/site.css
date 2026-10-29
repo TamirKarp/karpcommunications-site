@@ -118,9 +118,9 @@ main { display: block; min-height: 60vh; }
 .kc-gate-h { font-size: 42px; line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; margin: 0 0 48px; max-width: 740px; }
 .kc-paths { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .kc-path {
-  display: flex; flex-direction: column; gap: 14px;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px;
   background: #fff; border: 1px solid var(--border); border-radius: 12px;
-  padding: 36px; text-decoration: none; color: var(--navy);
+  padding: 56px 36px; text-decoration: none; color: var(--navy);
   transition: border-color .15s, box-shadow .15s, transform .15s;
 }
 .kc-path:hover, .kc-path:focus-visible { border-color: var(--navy); box-shadow: 0 8px 28px rgba(28,43,74,.10); transform: translateY(-2px); outline: none; }
